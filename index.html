@@ -1,0 +1,481 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lujah Maharjan | Retro Interactive Portfolio</title>
+    <!-- Google Fonts for Retro-Modern Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;700&family=Share+Tech+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <!-- EmailJS SDK -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="container">
+      <nav class="nav-container glass-card">
+        <div class="logo">LUJAH<span>.M</span></div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="container">
+      <!-- Hero Section -->
+      <section class="hero section-margin">
+        <div class="hero-left">
+          <div class="hero-tagline">
+            System Ready // Creative Photography & Programming
+          </div>
+          <h1>Lujah Maharjan</h1>
+          <p class="hero-desc">
+            Welcome to a space where visual storytelling meets technology. As an
+            aspiring computer scientist with a camera lens, I explore the unique
+            intersection of logical coding structures and creative, wild
+            landscapes.
+          </p>
+          <a href="#contact" class="btn-retro" data-sound="click"
+            >Initialize Connection</a
+          >
+        </div>
+        <div class="terminal">
+          <div class="terminal-header">
+            <span class="terminal-dot"></span>
+            <span class="terminal-dot"></span>
+            <span class="terminal-dot"></span>
+          </div>
+          <div class="terminal-body">
+            <p>&gt; WHOAMI</p>
+            <p class="terminal-text-red">
+              Lujah Maharjan (Student / Trekker / Scout)
+            </p>
+            <p>&gt; LOCATION</p>
+            <p>Lalitpur, Nepal</p>
+            <p>&gt; ACADEMICS</p>
+            <p>CS & IT @ SAIM College</p>
+            <p>&gt; CURRENT_PROJECT</p>
+            <p>"Group Fitness Tracking App"</p>
+            <p>&gt; <span class="cursor-blink">_</span></p>
+          </div>
+        </div>
+      </section>
+
+      <!-- About & Education Section -->
+      <section id="about" class="section-margin">
+        <div class="about-education-grid">
+          <div>
+            <h2 class="section-title">About Me</h2>
+            <p style="margin-bottom: 15px; font-size: 1.05rem">
+              I am a dedicated and ambitious student currently pursuing my
+              bachelor's degree at the South Asian Institute of Management
+              (SAIM). Beyond academics, I have a deep passion for nature
+              photography, capturing the beauty of landscapes and wildlife
+              through my lens.
+            </p>
+            <p style="margin-bottom: 25px; color: var(--text-muted)">
+              I am actively involved in the Duke of Edinburgh Awards program,
+              constantly seeking opportunities for personal growth and
+              leadership development. In my free time, you can find me trekking,
+              exploring new trails, or engaging in scouting operations that push
+              my boundaries.
+            </p>
+            <h3 style="margin-bottom: 15px">Achievements</h3>
+            <ul class="achievement-list">
+              <li class="achievement-item">
+                <span class="achievement-icon">[✓]</span
+                ><span
+                  >Actively participating in the Duke of Edinburgh Awards
+                  program.</span
+                >
+              </li>
+              <li class="achievement-item">
+                <span class="achievement-icon">[✓]</span
+                ><span
+                  >Successfully completed multiple high-endurance treks showing
+                  physical and organizational skills.</span
+                >
+              </li>
+              <li class="achievement-item">
+                <span class="achievement-icon">[✓]</span
+                ><span
+                  >Received recognition for exceptional service and dedication
+                  as a Scout.</span
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="section-title">Education Timeline</h2>
+            <div class="timeline">
+              <div class="timeline-item">
+                <div class="timeline-date">2025 - Ongoing</div>
+                <h3>Bachelor of Computer Science & IT</h3>
+                <p style="color: var(--text-muted)">
+                  SAIM College (South Asian Institute of Management)
+                </p>
+                <p style="font-size: 0.85rem; font-style: italic">
+                  Lalitpur, Nepal | Expected Graduation: 2029
+                </p>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-date">2022 - 2024</div>
+                <h3>+2 Studies (Management/Science)</h3>
+                <p style="color: var(--text-muted)">AVM High School</p>
+                <p style="font-size: 0.85rem; font-style: italic">
+                  Lalitpur, Nepal | Graduated: 2024
+                </p>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-date">Completed: 2022</div>
+                <h3>School Leaving Certificate (SEE)</h3>
+                <p style="color: var(--text-muted)">AVM High School</p>
+                <p style="font-size: 0.85rem; font-style: italic">
+                  Lalitpur, Nepal
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills & Hobbies Section -->
+      <section class="section-margin">
+        <div class="skills-hobbies-grid">
+          <div>
+            <h2 class="section-title">Core Skills</h2>
+            <div class="skills-list">
+              <div class="skill-item glass-card">
+                <div class="skill-header">
+                  <span>Web Development</span
+                  ><span style="color: var(--accent-red)">Proficient</span>
+                </div>
+                <p class="skill-desc">
+                  Creating modern responsive layouts, custom portfolio systems,
+                  and interactive user-focused web apps.
+                </p>
+              </div>
+              <div class="skill-item glass-card">
+                <div class="skill-header">
+                  <span>Nature Photography</span
+                  ><span style="color: var(--accent-red)"
+                    >Composition Expert</span
+                  >
+                </div>
+                <p class="skill-desc">
+                  An eye for wild landscapes, intricate close-up macro details,
+                  and dynamic natural lightning settings.
+                </p>
+              </div>
+              <div class="skill-item glass-card">
+                <div class="skill-header">
+                  <span>Leadership & Scouting</span
+                  ><span style="color: var(--accent-red)">Scout Ranger</span>
+                </div>
+                <p class="skill-desc">
+                  Expertise in survival safety, teamwork coordination,
+                  navigation, remote first-aid, camping, and community-driven
+                  initiatives.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <h2 class="section-title">Interests & Hobbies</h2>
+            <div class="hobbies-list">
+              <p style="margin-bottom: 10px; color: var(--text-muted)">
+                A blend of screen-work and trail-time helps me keep creative
+                logic alive. Here is how I spend my time outside the classroom:
+              </p>
+              <div class="badge-list">
+                <span class="badge"># Nature Photography</span
+                ><span class="badge"># Trekking & Trails</span
+                ><span class="badge"># Community Service</span
+                ><span class="badge"># Wilderness Camping</span
+                ><span class="badge"># App Development</span
+                ><span class="badge"># Tactical Survival Tech</span>
+              </div>
+              <div style="margin-top: 20px">
+                <img
+                  src="me.jpg"
+                  alt="Mountain Trek Path"
+                  style="
+                    width: 100%;
+                    height: 180px;
+                    object-fit: cover;
+                    border-radius: 8px;
+                    border: 2px solid var(--accent-muted);
+                  "
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects" class="section-margin">
+        <h2 class="section-title">Programming Projects</h2>
+        <div class="projects-grid">
+          <div class="project-card glass-card">
+            <div>
+              <span class="project-tag">React / Node</span>
+              <h3>Fitness Tracking App</h3>
+              <p>
+                Collaborative project designed to help health enthusiasts record
+                workouts, monitor active metrics, and track progress using local
+                memory features.
+              </p>
+            </div>
+            <span
+              style="
+                font-family: &quot;Share Tech Mono&quot;, monospace;
+                color: var(--accent-red);
+              "
+              >In Development &gt;</span
+            >
+          </div>
+          <div class="project-card glass-card">
+            <div>
+              <span class="project-tag">HTML5 / CSS3 / Vanilla JS</span>
+              <h3>Personal Portfolio Website</h3>
+              <p>
+                Crafting responsive, clean portfolio layouts (like this one) to
+                demonstrate the alignment of creative design and solid codebase
+                foundations.
+              </p>
+            </div>
+            <span
+              style="
+                font-family: &quot;Share Tech Mono&quot;, monospace;
+                color: var(--accent-red);
+              "
+              >Complete &gt;</span
+            >
+          </div>
+          <div class="project-card glass-card">
+            <div>
+              <span class="project-tag">Web Design / Photography API</span>
+              <h3>Nature Photography Blog</h3>
+              <p>
+                An online space built to archive visual frames from wild treks
+                and mountain explorations paired with written geographic
+                journals.
+              </p>
+            </div>
+            <span
+              style="
+                font-family: &quot;Share Tech Mono&quot;, monospace;
+                color: var(--accent-red);
+              "
+              >Complete &gt;</span
+            >
+          </div>
+          <div class="project-card glass-card">
+            <div>
+              <span class="project-tag">HTML5 / CSS3/ JS</span>
+              <h3>Paws Nepal</h3>
+              <p>
+                "Paws Nepal" is a web platform that connects rescued dogs with
+                loving adopters across Nepal, making pet adoption simple,
+                accessible, and compassionate.
+              </p>
+            </div>
+            <span
+              style="
+                font-family: &quot;Share Tech Mono&quot;, monospace;
+                color: var(--accent-red);
+              "
+              >Complete &gt;</span
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- Gallery Section -->
+      <section id="gallery" class="section-margin">
+        <h2 class="section-title">Nature Photography Gallery</h2>
+        <p
+          style="
+            margin-bottom: 30px;
+            color: var(--text-muted);
+            max-width: 600px;
+          "
+        >
+          A collection of captured wild frames displaying pristine moments in
+          time, wildlife structures, and the raw beauty of natural topography.
+          (Click any image to expand)
+        </p>
+        <div class="gallery-grid" id="galleryGrid">
+          <div
+            class="gallery-card glass-card"
+            data-img-src="https://picsum.photos/id/104/1200/800"
+            data-img-title="Amayangri Peaks"
+            data-img-desc="High-altitude landscape structures showcasing rugged mountain contours captured at sunrise."
+>
+            <div class="gallery-image-wrapper">
+              <img
+                src="1.jpg"
+                alt="Amayangri Peaks"
+              />
+            </div>
+            <div class="gallery-caption">
+              <h4>Amayangri</h4>
+              <p>High-altitude landscape at sunrise.</p>
+            </div>
+          </div>
+          <div
+            class="gallery-card glass-card"
+            data-img-src="https://picsum.photos/id/29/1200/800"
+            data-img-title="Mountain Range"
+            data-img-desc="Mountain Range seen from Kathmandu valley – crisp air and eternal peaks."
+          >
+            <div class="gallery-image-wrapper">
+              <img
+                src="2.jpg"
+                alt="Mountain Range"
+              />
+            </div>
+            <div class="gallery-caption">
+              <h4>Mountain High</h4>
+              <p>Mountain Range seen from Kathmandu valley.</p>
+            </div>
+          </div>
+          <div
+            class="gallery-card glass-card"
+            data-img-src="https://picsum.photos/id/96/1200/800"
+            data-img-title="Phewa Lake"
+            data-img-desc="Colorful boats drifting peacefully across the quiet lake, wrapped in mist and calmness."
+          >
+            <div class="gallery-image-wrapper">
+              <img src="3.jpg" alt="Phewa Lake" />
+            </div>
+            <div class="gallery-caption">
+              <h4>Phewa Lake</h4>
+              <p>Boats drifting across misty water.</p>
+            </div>
+          </div>
+          <div
+            class="gallery-card glass-card"
+            data-img-src="https://picsum.photos/id/119/1200/800"
+            data-img-title="Milky Way"
+            data-img-desc="The Milky Way glowing across the dark night sky, surrounded by countless stars in complete silence."
+          >
+            <div class="gallery-image-wrapper">
+              <img src="4.jpg" alt="Milky Way" />
+            </div>
+            <div class="gallery-caption">
+              <h4>Milky Way</h4>
+              <p>Stars across the night canvas.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+      <img class="lightbox-img" id="lightboxImg" alt="Expanded view" />
+      <div class="lightbox-caption" id="lightboxCaption"></div>
+    </div>
+
+    <!-- Footer / Contact Form -->
+    <footer id="contact">
+      <div class="container footer-grid">
+        <div>
+          <h2 style="font-size: 2.2rem; margin-bottom: 10px">Get In Touch</h2>
+          <p style="color: var(--text-muted); margin-bottom: 20px">
+            Whether you are looking to collaborate on interactive web apps or
+            interested in discussing nature photography treks, my digital
+            channel is open.
+          </p>
+          <div class="contact-info">
+            <div class="contact-item">📞 PH: +977-9869116341</div>
+            <div class="contact-item">📍 LOC: Guitole-8, Lalitpur, Nepal</div>
+          </div>
+        </div>
+        <div>
+          <div class="glass-card" style="padding: 25px">
+            <form id="retroContactForm">
+              <div style="margin-bottom: 15px">
+                <label
+                  style="
+                    display: block;
+                    font-family: &quot;Share Tech Mono&quot;, monospace;
+                  "
+                  >[SENDER_ID]</label
+                >
+                <input
+                  type="text"
+                  id="contactName"
+                  name="name"
+                  placeholder="Your Name"
+                  required
+                  style="width: 100%; padding: 10px"
+                />
+              </div>
+              <div style="margin-bottom: 15px">
+                <label
+                  style="
+                    display: block;
+                    font-family: &quot;Share Tech Mono&quot;, monospace;
+                  "
+                  >[EMAIL]</label
+                >
+                <input
+                  type="email"
+                  id="contactEmail"
+                  name="email"
+                  placeholder="your@email.com"
+                  required
+                  style="width: 100%; padding: 10px"
+                />
+              </div>
+              <div style="margin-bottom: 15px">
+                <label
+                  style="
+                    display: block;
+                    font-family: &quot;Share Tech Mono&quot;, monospace;
+                  "
+                  >[MESSAGE_BODY]</label
+                >
+                <textarea
+                  id="contactMsg"
+                  name="message"
+                  placeholder="Type message..."
+                  rows="3"
+                  required
+                  style="width: 100%; padding: 10px; resize: none"
+                ></textarea>
+              </div>
+              <button
+                type="submit"
+                class="btn-retro"
+                style="width: 100%; justify-content: center"
+                data-sound="click"
+              >
+                TRANSMIT DATA
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; 2026. LUJAH MAHARJAN | All Rights Reserved. Developed by Lujah
+        Maharjan.
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
