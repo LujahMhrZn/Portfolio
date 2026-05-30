@@ -222,3 +222,58 @@ document.addEventListener('DOMContentLoaded', function() {
 // ============================================
 window.addEventListener('touchstart', unlockAudio);
 window.addEventListener('keydown', unlockAudio);
+
+// ============================================
+// MOBILE HAMBURGER MENU
+// ============================================
+const menuToggle = document.getElementById('menuToggle');
+const navLinks = document.getElementById('navLinks');
+
+// Create overlay element
+const overlay = document.createElement('div');
+overlay.className = 'menu-overlay';
+document.body.appendChild(overlay);
+
+function toggleMenu() {
+    menuToggle.classList.toggle('active');
+    navLinks.classList.toggle('active');
+    overlay.classList.toggle('active');
+    
+    // Prevent body scroll when menu is open
+    if (navLinks.classList.contains('active')) {
+        document.body.style.overflow = 'hidden';
+        if(audioUnlocked) playRetroBeep('click');
+    } else {
+        document.body.style.overflow = '';
+    }
+}
+
+function closeMenu() {
+    menuToggle.classList.remove('active');
+    navLinks.classList.remove('active');
+    overlay.classList.remove('active');
+    document.body.style.overflow = '';
+}
+
+// Toggle menu on hamburger click
+if (menuToggle) {
+    menuToggle.addEventListener('click', toggleMenu);
+}
+
+// Close menu when clicking overlay
+overlay.addEventListener('click', closeMenu);
+
+// Close menu when a nav link is clicked
+const navLinkItems = document.querySelectorAll('.nav-links a');
+navLinkItems.forEach(link => {
+    link.addEventListener('click', () => {
+        closeMenu();
+    });
+});
+
+// Close menu on window resize if open (previces layout issues)
+window.addEventListener('resize', () => {
+    if (window.innerWidth > 768 && navLinks.classList.contains('active')) {
+        closeMenu();
+    }
+});
